@@ -8,7 +8,9 @@ import { ChatPopupComponent } from './components/chat-popup/chat-popup.component
 import { ChatNavbarComponent } from './components/chat-navbar/chat-navbar.component';
 import { ChatWindowComponent } from './components/chat-window/chat-window.component';
 import { ChatFormComponent } from './components/chat-form/chat-form.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialModule } from './shared-modules/angular-material/angular-material.module';
+import { MDBBootstrapModule,ButtonsModule, WavesModule, CollapseModule } from 'angular-bootstrap-md'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,10 @@ import { ChatFormComponent } from './components/chat-form/chat-form.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MDBBootstrapModule.forRoot(),
+    AngularMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
